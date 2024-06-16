@@ -71,4 +71,36 @@ console.log(resulti);
 const isLess24 =  n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 console.log(isLess24);
 
+//=============================Part 2=========================================
+//Option1 =====================
+
+let distance = 1500;
+let speedA = 55;
+let speedB = 60;
+let speedC = 75;
+let verdict = " ";
+
+//At 55 m/h
+
+let opA = ((1500 / 30) * 3);//50 gallons * 3  = $150
+console.log(opA + " " + "dollars needed for fuel at speed 55m/hr");
+let tottrpHrA = distance/speedA;
+console.log('total hrs at speed 55 is' + " " + tottrpHrA +'hrs'); //27.27 hrs
+
+
+//At 60 m/h
+let opB = ((1500 / 28) * 3) //53.71 gallons needed for total trip * 3 = $160.71
+console.log(opB + " " + 'dollars needed for fuel at speed 60m/hr');
+let tottrpHrsB = distance/speedB;
+console.log('total hrs at speed 60 is' + " " + tottrpHrsB + 'hrs'); //25 hrs
+
+//At 75 m/h
+let opC = ((1500 / 23) * 3) // 65.21 gallons needed * 3 =$195.65
+console.log(opC + " " + 'dollars needed for fuel at speed 75m/hr');
+let tottrpHrsC = (distance/speedC);
+console.log('total hrs at speed 75 is' + " " + tottrpHrsC +'hrs'); //20hrs
+
+verdict = "To save time and still stay within budget, option 'B' at 60 m/hr and fuel for $160.71 would be best option. "
+console.log(verdict);
+
 
